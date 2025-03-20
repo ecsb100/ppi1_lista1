@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulário de contato</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2></h2>
-    <p>Olá caro usuário, agradecemos por tê-lo aqui. Preenche o formulário que entraremos em contato o mais breve possível. O preenchimento dos campos Nome e E-mail são <b>obrigatórios</b> parao envio do formulário.</p>
-    <h1>Formulário de contato</h1>
+
+    <h2>Formulário de contato</h2>
+    <p id="mensagemInstrucao">Olá caro usuário, agradecemos por tê-lo aqui. Preenche o formulário que entraremos em contato o mais breve possível. O preenchimento dos campos Nome e E-mail são <b>obrigatórios</b> parao envio do formulário.</p>
+    
 
 <form action="/action_page.php">
   <label for="nome">Nome:</label>
@@ -52,7 +54,7 @@
   <label for="mensagem">Mensagem:</label>
   <textarea id="mensagem" name="mensagem" rows="4" cols="50" placeholder="Sua mensagem aqui..."></textarea>
 <br><br>
-  <input type="submit" value="Submit">
+<button type="submit">Enviar</button>
 <br><br>
   <a href="4_curriculo.html">Clique aqui para voltar à página anterior (Curiculo)</a>
 
