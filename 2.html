@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protocolo HTTP</title>
+</head>
+<body>
+    <h1>O que é o protocolo HTTP?</h1>
+    <p>O HTTP (Hypertext Transfer Protocol) é um protocolo de comunicação usado para transferir informações na Web. Ele define como as mensagens são formatadas e transmitidas entre um cliente (como um navegador) e um servidor web.</p>
+
+    <h2>Como o HTTP é usado na Web?</h2>
+    <p>Quando você acessa um site, o navegador envia uma requisição HTTP para o servidor onde o site está hospedado. O servidor então responde com um HTTP Response, geralmente contendo uma página HTML, que o navegador interpreta e exibe para o usuário.</p>
+
+    <h2>Fluxo básico de uma requisição HTTP:</h2>
+    <ol>
+        <li>O usuário digita um endereço no navegador (exemplo: www.exemplo.com).</li>
+        <li>O navegador envia uma requisição HTTP para o servidor do site, solicitando a página.</li>
+        <li>O servidor processa a requisição e responde com um código HTTP e o conteúdo solicitado (como um arquivo HTML).</li>
+        <li>O navegador exibe a página interpretando o código HTML recebido.</li>
+    </ol>
+    <img src="protocolohttp.png" alt="">
+
+    <h2>Principais métodos do HTTP:</h2>
+    <ul>
+        <li>GET – Solicita informações do servidor (ex: acessar uma página).</li>
+        <li>POST – Envia dados ao servidor (ex: preencher um formulário).</li>
+        <li>PUT – Atualiza informações em um servidor.</li>
+        <li>DELETE – Remove dados de um servidor.</li>
+    </ul>
+
+    <h2>HTTP vs. HTTPS</h2>
+    <p>O HTTPS (Hypertext Transfer Protocol Secure) é uma versão segura do HTTP que usa criptografia para proteger os dados trocados entre cliente e servidor. Isso é essencial para garantir a segurança em transações bancárias e envio de senhas.</p>
+
+    <h2>Exemplos de requisições HTTP:</h2>
+    <p>Vamos utilizar o site https://www.w3schools.com/ para visualizar o passo a passo das requisições e seu respectivo retorno</p>
+
+    <p>Ao acessar o site https://www.w3schools.com/ o navegador envia uma requisição para o servidor do tipo GET para obter informações do site</p>
+    <p>Conforme na imagem podemos ver que o servidor retornou o código 200 OK que significa que a solicitação foi processada com sucesso.</p>
+    <img src="solicitacao1.PNG" alt="">
+    <p>O servidor retornou um documento do tipo HTML que foi processado e exibido ao usuário pelo cliente (navegador).</p>
+    <img src="resposta2.PNG" alt="">
+    
+    <h2>Exemplo de Request e Response</h2>
+    <img src="requestresponse.PNG" alt="">
+    <p>Na imagem acima mostra o Request (Solicitação) e o Response (Resposta) e alguns detalhes desse processamento. <br> Descrição dos campos com importância para a solicitação: <br></p>
+    <table>
+        <caption>Request</caption>
+        <tr>
+            <th>Campo</th>
+            <th>Endereço </th>
+        </tr>
+        <tr><td>URL da solicitação</td>
+            <td>Indica o domínio do servidor ao qual a requisição está sendo feita.</td>
+
+        </tr>
+    </tr>
+    <tr>
+        <td>Método da solicitação</td>
+        <td>GET – Solicita informações do servidor (ex: acessar uma página).</td>
+
+    </tr>
+    <tr>
+        <td>Codigo do Status</td>
+        <td>Os códigos de status de resposta HTTP indicam se uma solicitação HTTP foi bem-sucedida ou não. Eles são agrupados em cinco classes: 
+            Informativas: 100–199;
+            Bem-sucedidas: 200–299;
+            Redirecionamento: 300–399;
+            Erro do cliente: 400–499;
+            Erro do servidor: 500–599;</td>
+
+    </tr>
+    </table>
+
+    <table>
+        <caption>Response</caption>
+        <tr>
+            <th>Campo</th>
+            <th>Endereço </th>
+        </tr>
+        <tr><td>Content type</td>
+            <td>Indica o tipo do arquivo de resposta recebido. Ex.: HTML, JS, CSS</td>
+
+        </tr>
+    </tr>
+    <tr>
+        <td>Date</td>
+        <td>Data e hora do retorno da solicitação</td>
+
+    </tr>
+    <tr>
+        <td>Acept</td>
+        <td>Todos os tipos de arquivos que são aceito spelo navegador como resposta</td>
+
+    </table>
+</body>
+</html>
